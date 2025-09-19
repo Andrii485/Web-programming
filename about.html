@@ -12,62 +12,49 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#main"> Перейти до основного контенту</a>
-
-    <header class="site-header">
-        <h1 id="site-title"> Мій перший лендінг</h1>
-        <nav class="site-nav" aria-label="Головна навігація">
-            <ul>
-                <li><a href="index.html" aria-current="about">Головна</a></li>
-                <li> <a href="about.html"> Про нас </a></li>
-                <li> <a href="contacts.html"> Контакти</a></li>
+    <header class="header">
+        <h1 class="header__title">Мей перший лендінг</h1>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index.html" class="navigation__link" aria-current="page">Головна</a>
+                </li>
+    
+                <li class="navigation__item"><a href="about.html" class="navigation_link">Про нас</a></li>
+    
+                <li class="navigation__item"> <a href="contacts.html" class="navigation__link">Контакти</a></li>
             </ul>
+    
         </nav>
     </header>
 
-    <main id="main">
-        <article class="about-intro">
-            <header>
-                <h2>Про вашу команду</h2>
-            </header>
-            <p>Ми - команда студентів, що створює навчальний веб-проект у межах курсу "Web-програмування (1 семестр)"
-            </p>
+    <main class="main">
+        <article class="about-article">
+            <h2 class="about-article__title">Про нашу команду</h2>
+            <p class="about-article__text">Ми команда студентів, що вивчає Web...</p>
+
         </article>
 
-        <section aria-labelledby="skills-title" class="skills">
-            <h3 id="skills-title">Наші навички</h3>
-            <ul>
-                <li>HTML, семантика, доступність</li>
-                <li>CSS, адаптивна верстка</li>
-                <li>JavaScript, робота з DOM</li>
+        <section class="skills">
+            <h3 class="skills__title">Наші навички</h3>
+            <ul class="skills__list">
+                <li class="skills__item">HTML, CSS, JavaScript</li>
+                <li class="skills__item">React, Node.js</li>
             </ul>
-        </section>
-
-        <section aria-labelledby="history-title" class="history">
-            <h3 id="history-title">Історія</h3>
-            <dl>
-                <dt>2023</dt>
-                <dd>Перші навчальні проєкти</dd>
-                <dt>2024</dt>
-                <dd>Команди pet-проєкти та хакатони</dd>
-                <dt>2025</dt>
-                <dd>Запуск навчального лендінгу</dd>
-            </dl>
         </section>
     </main>
 
 
-    <aside class="sidebar" aria-label="Додаткова інформація">
-        <h3>Цінності</h3>
+    <aside class="sidebar sidebar--values" aria-label="Цінності">
+        <h3 class="sedebar__title">Цінності</h3>
         <ul>
-            <li>Якість коду та прозорість</li>
-            <li>Навчання через практику</li>
-            <li>Комунікація та підтримка</li>
+            <li class="sideaber__item">Якість коду та прозорість</li>
+            <li class="sideaber__item">Навчання через практику</li>
+            <li class="sideaber__item">Комунікація та підтримка</li>
         </ul>
     </aside>
 
-    <footer class="site-footer">
-        <p> &#9400; 2025 6.1213-2пі.</p>
+    <footer class="footer">
+        <p class="footer__text">&#9400; 2025 Група <span class="footer__group-name">6.1213-2пі</span> </p>
     </footer>
 
 </body>
