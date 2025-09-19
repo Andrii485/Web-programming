@@ -4,52 +4,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Головна сторінка
-    навчального лендінгу: новини, послуги, переваги." />
-    <title>Лабораторна 2 - Головна</title>
-    <link rel="shortcut icon" href="assets\image\favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets\image\favicon.ico" type="image/x-icon">
+    <title>Лабораторна 3 - Головна</title>
+    <meta name="description" content="Головна сторінка навчального лендінгу: новини, послуги, переваги." />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
-
     <header class="header">
-        <h1 class="header__title">Мей перший лендінг</h1>
+        <h1 class="header__title">Мій перший лендінг</h1>
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="index.html" class="navigation__link"
                         aria-current="page">Головна</a></li>
-
-                <li class="navigation__item"><a href="about.html" class="navigation_link">Про нас</a></li>
-
-                <li class="navigation__item"> <a href="contacts.html" class="navigation__link">Контакти</a></li>
+                <li class="navigation__item"><a href="about.html" class="navigation__link">Про нас</a></li>
+                <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакти</a></li>
             </ul>
-
         </nav>
     </header>
 
     <main class="main">
-            <article class="article">
-                <h2 class="article__title">Новина дня</h2>
-                <p class="aricle__text"> Студент ПІБ_СТУДЕНТА розпочав роботу над лабораторною № 3</p>
-                <figure class=" article__media media--framed"> 
-                    <img class="media__img"
-                     src="" 
-                     alt="Фото студента">
-                     width="640" 
-                     loading="lazy"
-                     decoding="async"
-                     />
+        <article class="article">
+            <h2 class="article__title">Новина дня</h2>
+            <p class="article__text">Студент Бондаренко Андрій Максимович розпочав роботу над лабораторною № 3</p>
+            <figure class="media article__media media--framed">
+                <img class="media__img" src="assets\image\Student.png" alt="Фото студента" width="640px"
+                    loading="lazy" decoding="async" />
+                <figcaption class="media__caption">Це зображення для новини</figcaption>
+            </figure>
+        </article>
 
-                     <figcaption class="media__caption">Це зображення для новини</figcaption>
-                </figure>
-            </article>
-
-        
-
-        <section  class="services">
-            <h3 class="services-title"> Наші послуги</h3>
+        <section class="services">
+            <h3 class="services__title">Наші послуги</h3>
             <table class="services__table">
                 <thead>
                     <tr class="services__row">
@@ -58,29 +44,28 @@
                         <th class="services__header">Ціна</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <tr class="services__row">
-                        <td class="services__cell">Розробкка сайту</td>
+                        <td class="services__cell">Розробка сайту</td>
                         <td class="services__cell">Лендінг або корпоративний сайт</td>
-                        <td class="services__cell">2 булочки та чай</td>
+                        <td class="services__cell">1000$</td>
                     </tr>
-                    
                 </tbody>
             </table>
         </section>
     </main>
-
-    <aside class="sidebar" aria-label="Додаткова інформація">
-        <h3>Корисні посилання</h3>
-        <ul>
-            <li><a href="https://i.nure.ua/tekhnologiji/1706-krashchi-onlajn-servisi-dlya-programistiv" target="_blank"
-                    rel="noopener noreferrer">MDN Web Docs</a></li>
+    <aside class="sidebar sidebar--links" aria-label="Корисні посилання">
+        <h3 class="sidebar__title">Корисні посилання</h3>
+        <ul class="sidebar__list">
+            <li class="sidebar__item">
+                <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"
+                    class="sidebar__link">MDN Web Docs</a>
+            </li>
         </ul>
     </aside>
 
     <footer class="footer">
-        <p class="footer__text">&#9400; 2025 Група <span class="footer__group-name">6.1213-2пі</span> </p>
+        <p class="footer__text">© 2025 Група <span class="footer__group-name">6.1213-2пі</span></p>
     </footer>
 </body>
 
