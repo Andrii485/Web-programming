@@ -12,84 +12,75 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#main"> Перейти до основного контенту</a>
+  
 
-    <header class="site-header">
-        <h1 id="site-title"> Мій перший лендінг</h1>
-        <nav class="site-nav" aria-label="Головна навігація">
-            <ul>
-                <li><a href="index.html" aria-current="page">Головна</a></li>
-                <li> <a href="about.html"> Про нас </a></li>
-                <li> <a href="contacts.html"> Контакти</a></li>
+    <header class="header">
+        <h1 class="header__title">Мей перший лендінг</h1>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="index.html" class="navigation__link"
+                        aria-current="page">Головна</a></li>
+
+                <li class="navigation__item"><a href="about.html" class="navigation_link">Про нас</a></li>
+
+                <li class="navigation__item"> <a href="contacts.html" class="navigation__link">Контакти</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <main id="main">
+    <main class="main">
+            <article class="article">
+                <h2 class="article__title">Новина дня</h2>
+                <p class="aricle__text"> Студент ПІБ_СТУДЕНТА розпочав роботу над лабораторною № 3</p>
+                <figure class=" article__media media--framed"> 
+                    <img class="media__img"
+                     src="" 
+                     alt="Фото студента">
+                     width="640" 
+                     loading="lazy"
+                     decoding="async"
+                     />
 
+                     <figcaption class="media__caption">Це зображення для новини</figcaption>
+                </figure>
+            </article>
 
-        <article class="hero-article">
-            <header>
-                <h2>Гра</h2>
-            </header>
-            <p>Бондаренко Андрій Максимович почав роботу над HTML-каркасом</p>
-            <figure>
-                <img src="assets\image\Cyberpunk 2077.png" alt="Фото гри Cyberpunk 2077" />
-                <figcaption>Cyberpunk 2077</figcaption>
+        
 
-            </figure>
-        </article>
-
-        <section aria-labelledby="benefits-title" class="benefits">
-            <h3 id="benefits-title"> Наші переваги</h3>
-            <ul class="advantages">
-                <li>Сучастні технології фронтенду</li>
-                <li>Командна робота та менторинг</li>
-                <li>Практика на реальних кейсах</li>
-            </ul>
-        </section>
-
-        <section aria-labelledby="services-title" class="services">
-            <h3 id="services-title"> Наші послуги</h3>
-            <table>
+        <section  class="services">
+            <h3 class="services-title"> Наші послуги</h3>
+            <table class="services__table">
                 <thead>
-                    <tr>
-                        <th scope="col">Послуга</th>
-                        <th scope="col">Опис</th>
-                        <th scope="col">Ціна</th>
+                    <tr class="services__row">
+                        <th class="services__header">Послуга</th>
+                        <th class="services__header">Опис</th>
+                        <th class="services__header">Ціна</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>Розробка сайту</td>
-                        <td>Лейдінг або невеликий корпоративний сайт</td>
-                        <td>500 $</td>
+                    <tr class="services__row">
+                        <td class="services__cell">Розробкка сайту</td>
+                        <td class="services__cell">Лендінг або корпоративний сайт</td>
+                        <td class="services__cell">2 булочки та чай</td>
                     </tr>
-                    <tr>
-                        <td>SEO-оптимізація</td>
-                        <td>Базовий аудит та покращення видимості</td>
-                        <td>300 $</td>
-                    </tr>
-                    <tr>    
-                        <td>Підтримка</td>
-                        <td>Оновлення та технічна допомога</td>
-                        <td>100 $ / місяць</td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </section>
     </main>
-    
+
     <aside class="sidebar" aria-label="Додаткова інформація">
         <h3>Корисні посилання</h3>
         <ul>
-            <li><a href="https://i.nure.ua/tekhnologiji/1706-krashchi-onlajn-servisi-dlya-programistiv" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+            <li><a href="https://i.nure.ua/tekhnologiji/1706-krashchi-onlajn-servisi-dlya-programistiv" target="_blank"
+                    rel="noopener noreferrer">MDN Web Docs</a></li>
         </ul>
     </aside>
 
-    <footer class="site-footer">
-        <p> &#9400; 2025 6.1213-2пі.</p>
+    <footer class="footer">
+        <p class="footer__text">&#9400; 2025 Група <span class="footer__group-name">6.1213-2пі</span> </p>
     </footer>
 </body>
 
