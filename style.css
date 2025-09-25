@@ -23,7 +23,6 @@
     --c-border: var(--border);
 }
 
-
 *,
 *::before,
 *::after { box-sizing: border-box; }
