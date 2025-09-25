@@ -4,69 +4,125 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лабораторна 3 - Головна</title>
+    <title>Лабораторна 4 - Головна</title>
     <meta name="description" content="Головна сторінка навчального лендінгу: новини, послуги, переваги." />
     <link rel="icon" href="assets/images/favicon.ico" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__title">Мій перший лендінг</h1>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="index.html" class="navigation__link"
-                        aria-current="page">Головна</a></li>
-                <li class="navigation__item"><a href="about.html" class="navigation__link">Про нас</a></li>
-                <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="layout">
+        <header class="header">
+            <h1 class="header__title">Лабораторна № 4</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav__link">Головна</a>
+                <a href="about.html" class="nav__link">Про нас</a>
+                <a href="contacts.html" class="nav__link nav__link--cta">Контакти</a>
+            </nav>
+        </header>
 
-    <main class="main">
-        <article class="article">
-            <h2 class="article__title">Новина дня</h2>
-            <p class="article__text">Студент Бондаренко Андрій Максимович розпочав роботу над лабораторною № 3</p>
-            <figure class="media article__media media--framed">
-                <img class="media__img" src="assets\image\Student.png" alt="Фото студента" width="640px"
-                    loading="lazy" decoding="async" />
-                <figcaption class="media__caption">Це зображення для новини</figcaption>
-            </figure>
-        </article>
+        <aside class="sidenav">
+            <section class="sidebar sidebar--links" aria-label="Корисні посилання">
+                <h3 class="sidebar__title">Корисні посилання</h3>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="https://developer.mozilla.org/" target="_blank"
+                            rel="noopener noreferrer">MDN Web Docs</a>
+                    </li>
+                </ul>
+            </section>
 
-        <section class="services">
-            <h3 class="services__title">Наші послуги</h3>
-            <table class="services__table">
-                <thead>
-                    <tr class="services__row">
-                        <th class="services__header">Послуга</th>
-                        <th class="services__header">Опис</th>
-                        <th class="services__header">Ціна</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="services__row">
-                        <td class="services__cell">Розробка сайту</td>
-                        <td class="services__cell">Лендінг або корпоративний сайт</td>
-                        <td class="services__cell">1000$</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-    <aside class="sidebar sidebar--links" aria-label="Корисні посилання">
-        <h3 class="sidebar__title">Корисні посилання</h3>
-        <ul class="sidebar__list">
-            <li class="sidebar__item">
-                <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"
-                    class="sidebar__link">MDN Web Docs</a>
-            </li>
-        </ul>
-    </aside>
+            <section class="sidebar sidebar--values" aria-label="Цінності">
+                <h3 class="sidebar__title">Цінності</h3>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">Якість коду та прозорість</li>
+                    <li class="sidebar__item">Навчання через практику</li>
+                    <li class="sidebar__item">Комунікація та підтримка</li>
+                </ul>
+            </section>
 
-    <footer class="footer">
-        <p class="footer__text">© 2025 Група <span class="footer__group-name">6.1213-2пі</span></p>
-    </footer>
+            <section class="sidebar sidebar--social" aria-label="Соціальні мережі">
+                <h3 class="sidebar__title">Соціальні мережі</h3>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item"><a class="sidebar__link" href="#" aria-label="Facebook">Facebook</a></li>
+                    <li class="sidebar__item"><a class="sidebar__link" href="#" aria-label="Instagram">Instagram</a>
+                    </li>
+                    <li class="sidebar__item"><a class="sidebar__link" href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="main">
+            <section class="news">
+                <h2 class="news__title">Останні новини</h2>
+                <div class="news__list">
+                    <article class="news-card">
+                        <figure class="news-card__media media">
+                            <img class="media__img" src="assets/images/placeholder.jpg"
+                                alt="Фото зі студентського заходу" loading="lazy" decoding="async" />
+                        </figure>
+                        <h3 class="news-card__title">Старт навчального веб-проєкту</h3>
+                        <p class="news-card__excerpt">Група розпочала роботу над веб-проєктом, який охопить HTML, CSS,
+                            JS та React…</p>
+                        <div class="news-card__meta">
+                            <time class="news-card__date" datetime="2025-09-10">10 вер 2025</time>
+                            <a href="#" class="news-card__btn">Читати далі</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <figure class="news-card__media media">
+                            <img class="media__img" src="assets/images/placeholder.jpg"
+                                alt="Демонстрація лейаутів на уроці" loading="lazy" decoding="async" />
+                        </figure>
+                        <h3 class="news-card__title">Flexbox + Grid: практика</h3>
+                        <p class="news-card__excerpt">На четвертій лекції розберемо одновимірний та двовимірний лейаути
+                            з практикою…</p>
+                        <div class="news-card__meta">
+                            <time class="news-card__date" datetime="2025-09-12">12 вер 2025</time>
+                            <a href="#" class="news-card__btn">Читати далі</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <figure class="news-card__media media">
+                            <img class="media__img" src="assets/images/placeholder.jpg" alt="React" loading="lazy"
+                                decoding="async" />
+                        </figure>
+                        <h3 class="news-card__title">React</h3>
+                        <p class="news-card__excerpt">Заплановано вивчення основ React…</p>
+                        <div class="news-card__meta">
+                            <time class="news-card__date" datetime="2025-09-15">15 вер 2025</time>
+                            <a href="#" class="news-card__btn">Читати далі</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <p class="footer__text">© 2025 Група <span class="footer__group-name">6.1213-2пі</span></p>
+
+
+                <address class="footer__contacts" aria-label="Наші контакти">
+                    <h3 class="footer__contacts-title">Наші контакти</h3>
+                    <ul class="footer__contacts-list">
+                        <li class="footer__contacts-item">
+                            <span class="footer__label">Email:</span>
+                            <a class="footer__link" href="mailto:team@example.com">andrey53bondarenko@gmail.com</a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <span class="footer__label">Телефон:</span>
+                            <a class="footer__link" href="tel:+380501112233">+38 (050) 111-22-33</a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <span class="footer__label">Адреса:</span>
+                            <span>Запоріжжя, вул. Університетська, 66Б</span>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
