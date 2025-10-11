@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../abstracts/variables' as v;
+
+/// Міксін-media: up(sm|lg)
+@mixin up($name) {
+  @media (min-width: map.get(v.$bp, $name)) { @content; }
+}
+
+/// Видима фокус-обводка з м’якою тінню
+@mixin focus-ring($color) {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #fff 30%, $color 70%);
+}
+
+/// Базова картка/поверхня
+@mixin surface-card($pad: 1rem) {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2);
+  padding: $pad;
+  box-shadow: var(--shadow-1);
+}
