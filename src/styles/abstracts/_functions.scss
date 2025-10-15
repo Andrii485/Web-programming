@@ -1,0 +1,7 @@
+
+@use 'sass:math';
+
+/// Округлення значення до кроку (за замовч. 4px)
+@function round-step($val, $step: 4px) {
+  @return math.round($val / $step) * $step;
+}

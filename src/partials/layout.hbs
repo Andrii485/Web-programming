@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  {{> head pageTitle=pageTitle }}
+</head>
+<body>
+<div class="layout">
+  {{> header }}
+  {{> aside }}
+  <main class="main">
+    {{> @partial-block }}
+  </main>
+  {{> footer studentGroup=studentGroup studentEmail=studentEmail }}
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
