@@ -1,3 +1,5 @@
+// vite.config.js
+
 import { defineConfig } from 'vite';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url'
@@ -7,6 +9,8 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname  = dirname(__filename)
 
 export default defineConfig({
+    base: './', 
+
     plugins: [
         handlebars({
             partialDirectory: resolve(__dirname, 'src', 'partials'),
@@ -18,8 +22,8 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main:     resolve(__dirname, 'index.html'),
-                about:    resolve(__dirname, 'about.html'),
+                main:      resolve(__dirname, 'index.html'),
+                about:     resolve(__dirname, 'about.html'),
                 contacts: resolve(__dirname, 'contacts.html'),
             },
         },
