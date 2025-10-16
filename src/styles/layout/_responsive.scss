@@ -1,0 +1,27 @@
+@use '../_index' as ui;
+
+/* ≥ 640px */
+@include ui.up(sm){
+  .layout{
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "sidenav main"
+      "footer footer";
+  }
+
+  .footer{
+    &__inner{ grid-template-columns: 1fr minmax(220px, 1fr); }
+    &__text{ order: initial; }
+  }
+}
+
+/* ≥ 1024px */
+@include ui.up(lg){
+  .layout{ grid-template-columns: 280px 1fr; }
+
+  .footer{
+    &__inner{ grid-template-columns: 1fr minmax(280px, 1fr); }
+  }
+}

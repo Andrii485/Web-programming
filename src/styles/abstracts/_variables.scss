@@ -1,0 +1,31 @@
+// Колірна палітра
+$brand: #002b5c;
+$brand-600: #01356f;
+$brand-100: #e6eef6;
+
+$fg: #1f2937;
+$fg-muted: #6b7280;
+$bg: #f5f7fb;
+$surface: #ffffff;
+$border: #e5e7eb;
+
+// Тіні, радіуси, контейнер
+$shadow-1: 0 6px 16px rgba(0,0,0,.06);
+$radius: (1: 6px, 2: 12px);
+$container: 1200px;
+
+// Простір (scale)
+$space: (
+        1: .25rem, 2: .5rem, 3: .75rem,
+        4: 1rem, 6: 1.5rem, 8: 2rem
+);
+
+// Брейкпойнти
+$bp: (sm: 640px, lg: 1024px);
+
+// Типографіка (fluid-scale)
+$fs: (
+        body: clamp(1rem, 0.94rem + 0.5vw, 1.125rem),
+        h2:   clamp(1.25rem, 1.05rem + 1.2vw, 1.5rem),
+        h1:   clamp(1.5rem,  1.2rem + 2.2vw, 2.2rem)
+);

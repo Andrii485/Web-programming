@@ -1,0 +1,24 @@
+@use '../_index' as ui;
+
+.sidenav{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding: var(--space-6) var(--space-4);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+}
+
+.sidebar{
+  @include ui.surface-card(var(--space-4));
+
+  &__title{
+    margin: 0 0 var(--space-3);
+    font-size: 1.1rem;
+    color: var(--brand);
+  }
+
+  &__list{ display: flex; flex-direction: column; gap: .5rem; }
+  &__item{ color: var(--fg); }
+  &__link{ color: var(--brand); }
+}
