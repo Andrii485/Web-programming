@@ -7,10 +7,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname  = dirname(__filename)
 
 export default defineConfig({
-    // ✅ ВИПРАВЛЕННЯ 1: Встановлення базового шляху.
-    // Оскільки ваш сайт доступний за адресою /Web-programming/, 
-    // абсолютні шляхи повинні бути відносно цієї підпапки.
-    // Це виправить проблему з відсутністю стилів та скриптів.
+  
     base: '/Web-programming/', 
 
     plugins: [
