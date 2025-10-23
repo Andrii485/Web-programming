@@ -20,5 +20,8 @@
     "tailwindcss": "^4.1.15",
     "vite": "^6.3.6",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
