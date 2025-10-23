@@ -1,12 +1,14 @@
 @use 'sass:map';
 @use '../_index' as ui;
 
-// :root — місце для CSS-vars (їх можна перевизначати в темах)
+
+
 :root{
-  /* Бренд / текст / поверхні */
-  --brand: #{ui.$brand};
-  --brand-600: #{ui.$brand-600};
-  --brand-100: #{ui.$brand-100};
+  --brand: var(--color-brand-500);
+  --brand-600: var(--color-brand-600);
+  --brand-100: var(--color-brand-100);
+  --brand-meta: #{ui.$surface};
+
   --fg: #{ui.$fg};
   --fg-muted: #{ui.$fg-muted};
   --bg: #{ui.$bg};
