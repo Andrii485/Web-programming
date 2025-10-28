@@ -1,8 +1,30 @@
- <header class="header">
-            <h1 class="header__title">{{ labName }}</h1>
-            <nav class="nav">
-                <a href="index.html" class="nav__link">Головна</a>
-                <a href="about.html" class="nav__link">Про нас</a>
-                <a href="contacts.html" class="nav__link nav__link--cta">Контакти</a>
-            </nav>
-        </header>
+<header class="header">
+    <h1 class="header__title">{{ labName }}</h1>
+    <div class="flex justify-between border border-solid border-[color:var(--border)] space-x-6">
+        <nav class="nav">
+            <a href="/index.html" class="nav__link">Головна</a>
+            <a href="/about.html" class="nav__link">Про нас</a>
+            <a href="/contacts.html" class="nav__link">Контакти</a>
+        </nav>
+        <button id="theme-toggle"
+                class="
+                        p-2 rounded-full
+                        bg-[color:var(--surface)] hover:bg-[color:var(--surface-alt)]
+                        text-[color:var(--text)] hover:text-[color:var(--accent)]
+                        transition duration-300 ease-in-out
+                        focus:outline-none focus:ring-2 focus:ring-[color:var(--accent)]
+                        cursor-pointer
+                    "
+                type="button"
+                aria-label="Переключити тему">
+
+            <svg id="sun-icon" class="h-8 w-8 block dark:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" />
+            </svg>
+
+            <svg id="moon-icon" class="h-8 w-8 hidden dark:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.585.732-3.755A9.726 9.726 0 002.25 12c0 5.385 4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75c0-.85-.147-1.67-.418-2.438z" />
+            </svg>
+        </button>
+    </div>
+</header>
