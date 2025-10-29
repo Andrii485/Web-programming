@@ -8,6 +8,7 @@
     --brand:#7fb3ff;
     --brand-600:#6aa2f0;
     --brand-100:#17233b;
+    --brand-meta: color-mix(in srgb, var(--surface) 92%, #fff 8%);
   }
 
   .sidebar { background: var(--surface); }

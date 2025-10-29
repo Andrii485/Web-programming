@@ -1,15 +1,18 @@
-{{#> layout pageTitle="Про нас" studentGroup="6.1213-2пі" studentEmail="andrey53bondarenko@gmail.com" }}
-<article class="about-article">
-  <h2 class="about-article__title">Про нашу команду</h2>
-  <p class="about-article__text">Ми — команда студентів, що вивчає Web...</p>
-</article>
+{{#> layout pageTitle="Про нас" studentGroup="6.1213-2пі" studentEmail="andrey53bondarenko@gmail.com" pageCode = "about"}}
+<section class="team">
+  <h2 class="team__title">Наша команда</h2>
 
+  <div class="team__list"></div>
 
-<section class="skills">
-  <h3 class="skills__title">Наші навички</h3>
-  <ul class="skills__list">
-    <li class="skills__item">HTML, CSS, JavaScript</li>
-    <li class="skills__item">React, Node.js</li>
-  </ul>
+  <template id="employee-card-tpl">
+    <article class="card employee-card">
+      <img class="employee-card__photo" alt="" width="320" height="240" loading="lazy">
+      <div class="employee-card__body">
+        <h3 class="employee-card__name"></h3>
+        <p class="employee-card__role"></p>
+        <a class="btn-brand employee-card__cta" href="#" target="_blank" rel="noopener">Профіль</a>
+      </div>
+    </article>
+  </template>
 </section>
 {{/layout}}

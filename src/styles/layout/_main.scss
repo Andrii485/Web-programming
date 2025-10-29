@@ -17,3 +17,13 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
+
+.team{
+  &__title{ margin: 0 0 var(--space-4); font-size: var(--fs-h2);}
+
+  &__list{
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
