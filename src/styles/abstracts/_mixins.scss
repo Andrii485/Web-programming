@@ -1,6 +1,7 @@
 @use 'sass:map';
 @use '../abstracts/variables' as v;
 
+
 /// Міксін-media: up(sm|lg)
 @mixin up($name) {
   @media (min-width: map.get(v.$bp, $name)) { @content; }
@@ -18,5 +19,4 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-2);
   padding: $pad;
-  box-shadow: var(--shadow-1);
 }

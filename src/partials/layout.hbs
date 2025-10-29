@@ -3,14 +3,18 @@
 <head>
     {{> head pageTitle=pageTitle }}
 </head>
-<body>
+<body data-page="{{pageCode}}">
 <div class="layout">
     {{> header }}
     {{> aside }}
     <main class="main">
         {{> @partial-block }}
     </main>
+<<<<<<< HEAD
     {{> footer studentGroup=studentGroup studentEmail=studentEmail }}
+=======
+    {{> footer studentGroup=studentGroup studentEmail=studentEmail}}
+>>>>>>> lb8
 </div>
 <script type="module" src="/src/main.js"></script>
 
